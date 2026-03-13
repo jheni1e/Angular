@@ -1,5 +1,4 @@
 <!-- Meus componentes -->
 <div class="mainDiv">
-  <p class="counter">{{ count }}</p>
-  <app-button (OnClick)="wasClicked()"/>
+  <app-button (OnClick)="wasClicked()" [label]="this.count.toString()"/>
 </div>
