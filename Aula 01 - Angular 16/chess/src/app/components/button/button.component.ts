@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -7,9 +7,11 @@ import { Component } from '@angular/core';
 })
 export class ButtonComponent {
   isClicked = false;
-  
-  onClick = () => {
+  OnClick: EventEmitter<void> = new EventEmitter();
+
+  clicked = () => {
     this.isClicked = !this.isClicked;
     console.log("clicado: ", this.isClicked);
+    this.OnClick.emit();
   }
 }

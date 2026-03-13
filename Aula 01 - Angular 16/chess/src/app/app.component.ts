@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'chess';
+  title = 'Angular Class';
+  count = 0;
+
+  wasClicked = () => {
+    this.count++;
+  }
 }
