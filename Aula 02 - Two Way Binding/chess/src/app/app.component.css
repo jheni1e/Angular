@@ -1,0 +1,10 @@
+.mainDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.counter {
+    padding: 3rem;
+}
