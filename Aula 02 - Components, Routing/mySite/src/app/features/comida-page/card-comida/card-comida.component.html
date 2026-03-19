@@ -1,1 +1,8 @@
-<p>card-comida works!</p>
+<div class="comidas">
+  <div class="comida" *ngFor="let c of comidas; track $index">
+    <img src="{{ c.image }}" />
+    <p>{{ c.name }}</p>
+    <p>R$ {{ c.price }}</p>
+    <p>⭐ {{ c.nota }} — {{ c.tempo_entrega }} min</p>
+  </div>
+</div>
