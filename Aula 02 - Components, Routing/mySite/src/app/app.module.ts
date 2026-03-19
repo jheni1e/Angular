@@ -8,6 +8,8 @@ import { HeaderComponent } from './shared/header/header.component';
 import { LoginPageComponent } from './features/login-page/login-page.component';
 import { MainPageComponent } from './features/main-page/main-page.component';
 import { NotFoundComponent } from './features/not-found/not-found.component';
+import { MercadoPageComponent } from './features/mercado-page/mercado-page.component';
+import { ComidaPageComponent } from './features/comida-page/comida-page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { NotFoundComponent } from './features/not-found/not-found.component';
     HeaderComponent,
     LoginPageComponent,
     MainPageComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    MercadoPageComponent,
+    ComidaPageComponent
   ],
   imports: [
     BrowserModule,
