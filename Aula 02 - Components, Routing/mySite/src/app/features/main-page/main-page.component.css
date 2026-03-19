@@ -1,7 +1,7 @@
 .main-container {
     display: flex;
     font-size: 2vh;
-    height: 100vh;
+    height: calc(100vh - 8vh);
     overflow: hidden;
 }
 
