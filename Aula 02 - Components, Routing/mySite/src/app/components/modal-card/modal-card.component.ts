@@ -10,12 +10,12 @@ import { IMercado } from 'src/app/mocks/Mercado.mock';
 export class ModalCardComponent {
 
   @Input()
-  item!: IComida | IMercado;
+  item!: IComida | IMercado; // recebe um item do componente pai, que pode ser tanto um IComida ou um IMercado
 
   @Output()
-  dataChange: EventEmitter<boolean> = new EventEmitter();
+  dataChange: EventEmitter<boolean> = new EventEmitter(); // emitter para mandar pro componente pai o "abriu" booleano
 
   changed = (e: any) => {
-    this.dataChange.emit(e);
+    this.dataChange.emit(e); // emite a mudança booleana
   }
 }

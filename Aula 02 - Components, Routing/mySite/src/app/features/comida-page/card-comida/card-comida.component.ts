@@ -12,12 +12,12 @@ export class CardComidaComponent {
   comidas: IComida[] = []
 
   @Input()
-  abriu: boolean = false;
+  abriu: boolean = false; // retém a variável booleana q controla o modal
 
-  itemSelecionado!: IComida;
+  itemSelecionado!: IComida; // variável do item selecionado ao ser clicado
 
   abrirModal(c: IComida) {
-    this.itemSelecionado = c;
-    this.abriu = true;
+    this.itemSelecionado = c; // seta o item selecionado para o que você clicou
+    this.abriu = true; // seta como true para abrir o modal
   }
 }

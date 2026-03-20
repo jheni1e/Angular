@@ -1,9 +1,13 @@
 <div class="mercados">
-  <div class="mercado" *ngFor="let m of mercados; track $index" (click)="abrirModal(m)">
-    <img src="{{ m.image }}" />
+  <div class="mercado" *ngFor="let m of mercados; track $index">
+    <img src="{{ m.image }}" (click)="abrirModal(m)"/>
+    <!-- ao clicar na imagem, vai selecionar o item e abrir o modal pela função  -->
     <p>{{ m.name }}</p>
     <p>R$ {{ m.price }}</p>
     <p>⭐ {{ m.nota }} — {{ m.tempo_entrega }} min</p>
   </div>
 </div>
 <app-modal-card *ngIf="abriu" (dataChange)="abriu = $event" [item]="itemSelecionado" />
+<!-- o modal só irá aparecer a partir da condição de abriu = true -->
+<!-- e manda para ele o itemSelecionado que foi setado ao clicar na imagem  -->
+<!-- abriu vai ser mudado ao rodar o dataChange (event emitter booleano) -->
