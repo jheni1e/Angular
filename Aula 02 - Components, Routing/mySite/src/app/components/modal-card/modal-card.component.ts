@@ -8,8 +8,6 @@ import { IMercado } from 'src/app/mocks/Mercado.mock';
   styleUrls: ['./modal-card.component.css']
 })
 export class ModalCardComponent {
-  @Input()
-  show: boolean = false;
 
   @Input()
   item!: IComida | IMercado;
