@@ -14,8 +14,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 30rem;
-    height: 20rem;
+    width: 50rem;
+    height: 40rem;
     margin: auto;
     background-color: #f5f0eb;
     color: black;
@@ -47,4 +47,12 @@
 .modal-container p {
     font-weight: 100;
     font-family: Verdana;
+}
+
+.modal-container img {
+    height: 35vh;
+    width: 35vw;
+    margin-bottom: 3vh;
+    object-fit: cover;
+    object-position: center;
 }
