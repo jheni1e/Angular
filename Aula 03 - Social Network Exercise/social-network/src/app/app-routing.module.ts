@@ -5,7 +5,8 @@ import { NotFoundComponent } from './features/not-found/not-found.component';
 import { CreateAccountComponent } from './features/main-page/create-account/create-account.component';
 
 const routes: Routes = [
-  { path: "", component: MainPageComponent, children: [ { path: "register", component: CreateAccountComponent }] },
+  { path: "", component: MainPageComponent },
+  { path: "register", component: CreateAccountComponent },
   { path: "**", component: NotFoundComponent }
 ];
 
