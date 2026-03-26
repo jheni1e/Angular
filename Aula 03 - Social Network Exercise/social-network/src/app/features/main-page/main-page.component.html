@@ -1,5 +1,12 @@
 <app-header></app-header>
 
 <div class="main-container">
+  <input type="text" [(ngModel)]="name" placeholder="O que está acontecendo?" />
+  <input type="text" [(ngModel)]="image" placeholder="🖼️" />
+
+  <button (click)="enviar()">Postar</button>
+  <div class="feed">
+    <app-card *ngFor="let item of items" [item]="item"></app-card>
+  </div>
   <router-outlet></router-outlet>
 </div>

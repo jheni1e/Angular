@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Item } from 'src/app/mocks/Item.mock';
 import { IPerson } from 'src/app/mocks/Person.mock';
 
 @Component({
@@ -8,7 +9,7 @@ import { IPerson } from 'src/app/mocks/Person.mock';
 })
 export class CardComponent {
   @Input()
-  item!: IPerson;
+  item!: Item;
 
   @Output()
   dataChange: EventEmitter<boolean> = new EventEmitter(); // emitter para mandar pro componente pai o "abriu" booleano

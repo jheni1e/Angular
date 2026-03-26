@@ -9,6 +9,7 @@ import { ValidateCpfComponent } from './components/validate-cpf/validate-cpf.com
 import { CreateAccountComponent } from './features/main-page/create-account/create-account.component';
 import { CardComponent } from './components/card/card.component';
 import { NotFoundComponent } from './features/not-found/not-found.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NotFoundComponent } from './features/not-found/not-found.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
