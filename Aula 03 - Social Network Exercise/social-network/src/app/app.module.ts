@@ -10,6 +10,7 @@ import { CreateAccountComponent } from './features/main-page/create-account/crea
 import { CardComponent } from './components/card/card.component';
 import { NotFoundComponent } from './features/not-found/not-found.component';
 import { FormsModule } from '@angular/forms';
+import { LoginPageComponent } from './features/login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     ValidateCpfComponent,
     CreateAccountComponent,
     CardComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
