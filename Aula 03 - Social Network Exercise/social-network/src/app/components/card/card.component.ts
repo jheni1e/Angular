@@ -10,11 +10,4 @@ import { IPerson } from 'src/app/mocks/Person.mock';
 export class CardComponent {
   @Input()
   item!: Item;
-
-  @Output()
-  dataChange: EventEmitter<boolean> = new EventEmitter(); // emitter para mandar pro componente pai o "abriu" booleano
-
-  changed = (e: any) => {
-    this.dataChange.emit(e); // emite a mudança booleana
-  }
 }
