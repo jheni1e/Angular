@@ -16,7 +16,10 @@ export class LoginPageComponent implements OnInit {
 
   ngOnInit(): void {
     this._aRoute.params.subscribe((param) => {
-      console.log(param['tab'])
+      this.isSubscribe = param['tab'] == "subscribe";
+      if (this.isSubscribe) {
+        console.log("subscrito kk")
+      }
     })
   }
 }

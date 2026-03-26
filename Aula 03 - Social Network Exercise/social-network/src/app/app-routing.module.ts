@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: "", component: MainPageComponent },
   { path: "register", component: CreateAccountComponent },
   { path: "login", component: LoginPageComponent },
-  { path: "login:tab", component: LoginPageComponent },
+  { path: "login/:tab", component: LoginPageComponent },
   { path: "**", component: NotFoundComponent }
 ];
 
